@@ -10,7 +10,29 @@
 
 Run `ng serve` for a dev server. Navigate to [http://localhost:4200/](http://localhost:4200/). The app will automatically reload if you change any of the source files.
 
+## app.component.html
 
+```
+<div class="container">
+<form #myForm="ngForm" (ngSubmit)="submitForm(myForm)">
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email"
+           class="form-control"
+           id="email"
+           placeholder="Enter email" ngModel name="email" required #email="ngModel">
+    <div class="alert alert-danger fade in" *ngIf="!email.valid && email.touched">
+        Please enter a valid Email Address
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password" placeholder="Password" ngModel name="password" required>
+  </div>
+  <button type="submit" class="btn btn-primary" [disabled]="!myForm.valid">Submit</button>
+</form>
+</div>
+```
 
 # Angular2TemplateDriven
 
