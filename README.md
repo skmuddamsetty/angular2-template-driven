@@ -1,10 +1,22 @@
+# Steps to run the project
+
+```
+1. Open Terminal and change directory to the projects folder
+2. Run "npm install" - this will install all the dependencies which are present in package.json
+3. Run "ng serve" - this will compile the files and run the application in the dev server
+```
+
+## How to run the app
+
+Run `ng serve` for a dev server. Navigate to [http://localhost:4200/](http://localhost:4200/). The app will automatically reload if you change any of the source files.
+
+
+
 # Angular2TemplateDriven
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.2.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
