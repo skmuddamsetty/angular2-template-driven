@@ -1,38 +1,20 @@
+# Project Description
+
+This project helps in understanding
+1) How a template driven approach works in Angular 2.
+2) How to disable the button if the form inputs are not valid.
+3) How to show an error message to the user if the inputs are not valid.
+
 # Steps to run the project
 
-```
 1. Open Terminal and change directory to the projects folder
 2. Run "npm install" - this will install all the dependencies which are present in package.json
 3. Run "ng serve" - this will compile the files and run the application in the dev server
-```
+
 
 ## How to run the app
 
 Run `ng serve` for a dev server. Navigate to [http://localhost:4200/](http://localhost:4200/). The app will automatically reload if you change any of the source files.
-
-## app.component.html
-
-```
-<div class="container">
-<form #myForm="ngForm" (ngSubmit)="submitForm(myForm)">
-  <div class="form-group">
-    <label for="email">Email address</label>
-    <input type="email"
-           class="form-control"
-           id="email"
-           placeholder="Enter email" ngModel name="email" required #email="ngModel">
-    <div class="alert alert-danger fade in" *ngIf="!email.valid && email.touched">
-        Please enter a valid Email Address
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="password">Password</label>
-    <input type="password" class="form-control" id="password" placeholder="Password" ngModel name="password" required>
-  </div>
-  <button type="submit" class="btn btn-primary" [disabled]="!myForm.valid">Submit</button>
-</form>
-</div>
-```
 
 # Angular2TemplateDriven
 
